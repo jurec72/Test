@@ -1,0 +1,42 @@
+Feature: ApiMeetingTest
+  Description: this feature file contains scenarios related to api
+  testing of meeting endpoint.
+
+  Background:                [90m# ApiMeetingTest.feature:5[0m
+    [32mGiven [0m[32mapi authentication[0m [90m# ApiMeetingStepDef.authentication()[0m
+
+  @apiTest
+  Scenario: Set up a valid meeting                                                          [90m# ApiMeetingTest.feature:9[0m
+    [32mWhen [0m[32mrequest body is prepared for creating a new [0m[32m[1mvalidMeeting[0m                           [90m# ApiMeetingStepDef.prepareRequestBodyForNewMeeting(String)[0m
+    [32mAnd [0m[32mrequest to create a new meeting is sent[0m                                             [90m# ApiMeetingStepDef.sendRequestToCreateMeeting()[0m
+    [32mThen [0m[32mresponse body and status code are validated[0m                                        [90m# ApiMeetingStepDef.validateResponseAfterPostRequest()[0m
+    [32mAnd [0m[32m[0m[32m[1mvalidMeeting[0m[32m object is saved into json file[0m                                         [90m# ApiMeetingStepDef.saveResponseObjectIntoJsonFile(String)[0m
+    [32mAnd [0m[32m[0m[32m[1mvalidMeeting[0m[32m is retrieved from database[0m                                             [90m# ApiMeetingStepDef.retrieveMeeting(String)[0m
+    [32mThen [0m[32mretrieved response and status code are validated with expected [0m[32m[1mvalidMeeting[0m[32m result[0m [90m# ApiMeetingStepDef.validateResponseBodyAfterGetRequest(String)[0m
+
+  Background:                [90m# ApiMeetingTest.feature:5[0m
+    [32mGiven [0m[32mapi authentication[0m [90m# ApiMeetingStepDef.authentication()[0m
+
+  @apiTest
+  Scenario: Set up a meeting without id                                                 [90m# ApiMeetingTest.feature:18[0m
+    [32mWhen [0m[32mrequest body is prepared for creating a new [0m[32m[1mwithoutIdMeeting[0m                   [90m# ApiMeetingStepDef.prepareRequestBodyForNewMeeting(String)[0m
+    [32mAnd [0m[32mrequest to create a new meeting is sent[0m                                         [90m# ApiMeetingStepDef.sendRequestToCreateMeeting()[0m
+    [32mThen [0m[32mresponse body and status code are validated with [0m[32m[1mwithoutIdMeeting[0m[32m error result[0m [90m# ApiMeetingStepDef.validateResponseAfterInvalidRequest(String)[0m
+
+  Background:                [90m# ApiMeetingTest.feature:5[0m
+    [32mGiven [0m[32mapi authentication[0m [90m# ApiMeetingStepDef.authentication()[0m
+
+  @apiTest
+  Scenario: Set up a meeting with record date set in the past                                   [90m# ApiMeetingTest.feature:24[0m
+    [32mWhen [0m[32mrequest body is prepared for creating a new [0m[32m[1minvalidRecordDateMeeting[0m                   [90m# ApiMeetingStepDef.prepareRequestBodyForNewMeeting(String)[0m
+    [32mAnd [0m[32mrequest to create a new meeting is sent[0m                                                 [90m# ApiMeetingStepDef.sendRequestToCreateMeeting()[0m
+    [32mThen [0m[32mresponse body and status code are validated with [0m[32m[1minvalidRecordDateMeeting[0m[32m error result[0m [90m# ApiMeetingStepDef.validateResponseAfterInvalidRequest(String)[0m
+
+  Background:                [90m# ApiMeetingTest.feature:5[0m
+    [32mGiven [0m[32mapi authentication[0m [90m# ApiMeetingStepDef.authentication()[0m
+
+  @apiTest
+  Scenario: Set up a meeting with record date after meeting date                                   [90m# ApiMeetingTest.feature:30[0m
+    [32mWhen [0m[32mrequest body is prepared for creating a new [0m[32m[1minvalidRecordAndMeetingDate[0m                   [90m# ApiMeetingStepDef.prepareRequestBodyForNewMeeting(String)[0m
+    [32mAnd [0m[32mrequest to create a new meeting is sent[0m                                                    [90m# ApiMeetingStepDef.sendRequestToCreateMeeting()[0m
+    [32mThen [0m[32mresponse body and status code are validated with [0m[32m[1minvalidRecordAndMeetingDate[0m[32m error result[0m [90m# ApiMeetingStepDef.validateResponseAfterInvalidRequest(String)[0m

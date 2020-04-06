@@ -1,0 +1,8 @@
+
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ç£ñÅ
+Šsquid:S11926"lDefine a constant instead of duplicating this literal "src/main/resources/ApiResponseJsonBody.json" 3 times.(Ãì´‡8çÉßÔ-
+{squid:S1488 "_Immediately return this expression instead of assigning it to the temporary variable "baseUri".(Àö‡Ôøÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(´™ôÒ
+csquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Í½à
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ú¶éÒ

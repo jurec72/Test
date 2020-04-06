@@ -1,0 +1,122 @@
+{
+  "validMeeting": {
+    "id": "123",
+    "type": "EGM",
+    "issuer": "New Company",
+    "location": "Location",
+    "url": "www.newcompany.com",
+    "isin": {
+      "isin": "GB0000566504",
+      "type": "Ordinary"
+    },
+    "ratioHolding": 1,
+    "ratioEntitlement": 1,
+    "recordDate": "2019-10-21T14:44:42.034Z",
+    "deadlineDate": "2019-11-21T14:44:42.034Z",
+    "meetingDate": "2019-12-21T14:44:42.034Z",
+    "votingOptions": {
+      "voteFor": true,
+      "voteAgainst": true,
+      "abstain": true,
+      "proxy": true,
+      "noAction": true,
+      "split": true
+    }
+  },
+  "withoutIdMeeting": {
+    "id": "",
+    "type": "EGM",
+    "issuer": "New Company",
+    "location": "Location",
+    "url": "www.newcompany.com",
+    "isin": {
+      "isin": "GB0000566504",
+      "type": "Ordinary"
+    },
+    "ratioHolding": 1,
+    "ratioEntitlement": 1,
+    "recordDate": "2018-01-31T05:45:50Z",
+    "deadlineDate": "2018-01-31T05:45:50Z",
+    "meetingDate": "2019-02-10T05:45:50Z",
+    "votingOptions": {
+      "voteFor": true,
+      "voteAgainst": true,
+      "abstain": true,
+      "proxy": true,
+      "noAction": true,
+      "split": true
+    }
+  },
+  "withoutDataMeeting": {
+    "id": "",
+    "type": "",
+    "issuer": "",
+    "location": "",
+    "url": "",
+    "isin": {
+      "isin": "",
+      "type": ""
+    },
+    "ratioHolding": null,
+    "ratioEntitlement": null,
+    "recordDate": "",
+    "deadlineDate": "",
+    "meetingDate": "",
+    "votingOptions": {
+      "voteFor": null,
+      "voteAgainst": null,
+      "abstain": null,
+      "proxy": null,
+      "noAction": null,
+      "split": null
+    }
+  },
+  "invalidRecordDateMeeting": {
+    "id": "12323ABC_TCG",
+    "type": "EGM",
+    "issuer": "New Company",
+    "location": "Location",
+    "url": "www.newcompany.com",
+    "isin": {
+      "isin": "GB0000566504",
+      "type": "Ordinary"
+    },
+    "ratioHolding": 1,
+    "ratioEntitlement": 1,
+    "recordDate": "2018-01-31T14:44:42.034Z",
+    "deadlineDate": "2018-01-31T14:44:42.034Z",
+    "meetingDate": "2016-02-10T14:44:42.034Z",
+    "votingOptions": {
+      "voteFor": true,
+      "voteAgainst": true,
+      "abstain": true,
+      "proxy": true,
+      "noAction": true,
+      "split": true
+    }
+  },
+  "invalidRecordAndMeetingDate": {
+    "id": "12323ABC_TCG",
+    "type": "EGM",
+    "issuer": "New Company",
+    "location": "Location",
+    "url": "www.newcompany.com",
+    "isin": {
+      "isin": "GB0000566504",
+      "type": "Ordinary"
+    },
+    "ratioHolding": 1,
+    "ratioEntitlement": 1,
+    "recordDate": "2019-11-21T14:44:42.034Z",
+    "deadlineDate": "2019-12-21T14:44:42.034Z",
+    "meetingDate": "2019-10-21T14:44:42.034Z",
+    "votingOptions": {
+      "voteFor": true,
+      "voteAgainst": true,
+      "abstain": true,
+      "proxy": true,
+      "noAction": true,
+      "split": true
+    }
+  }
+}
